@@ -4,12 +4,15 @@
   "description": "React webpack setup",
   "main": "webpack-dev-server",
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "build": "webpack",
+    "deploy": "firebase deploy"
   },
   "keywords": [],
   "author": "Beveloper",
   "license": "ISC",
   "devDependencies": {
+    "@types/firebase": "^3.2.1",
     "@types/react": "^16.9.45",
     "@types/react-dom": "^16.9.8",
     "awesome-typescript-loader": "^5.2.1",
@@ -23,6 +26,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "firebase": "^7.17.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
