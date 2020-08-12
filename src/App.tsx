@@ -1,12 +1,14 @@
 import * as React from "react";
 
-export interface HelloWorldProps {
+export interface AppProps {
   userName: string;
   lang: string;
 }
 
-export const HelloWorld = (props: HelloWorldProps) => (
-         <h1>
-           Hi {props.userName} from React! Welcome to {props.lang}!
-         </h1>
-       );
+export const App = (props: AppProps) => {
+
+
+    return (<h1>
+        Hi {props.userName} from React! Welcome to {props.lang}!
+    </h1>)
+};
