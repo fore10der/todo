@@ -1,4 +1,8 @@
 import * as React from "react";
+import { db } from "./firebase";
+import {useEffect} from "react";
+import {TasksContext, tasksContextDefaultValue} from "./components/TasksContext";
+
 
 export interface AppProps {
   userName: string;
@@ -6,9 +10,7 @@ export interface AppProps {
 }
 
 export const App = (props: AppProps) => {
-
-
-    return (<h1>
-        Hi {props.userName} from React! Welcome to {props.lang}!
-    </h1>)
+    return <TasksContext.Provider value={tasksContextDefaultValue}>
+        пук
+    </TasksContext.Provider>
 };
